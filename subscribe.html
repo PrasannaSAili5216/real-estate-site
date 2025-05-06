@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+            
+    <title>Subscribe - Holux Real Estate</title>
+</head>
+<body>
+    <!--==================== SUBSCRIPTION ====================-->
+    <main class="main">
+        <section class="subscription section">
+            <div class="subscription__container container grid">
+                <div class="subscription__data">
+                    <img src="assets/img/subscribe-image.jpg" alt="Subscribe to Newsletter" class="subscription__image">
+                    <h2 class="section__title">
+                        Subscribe to Our Home<span>.</span>
+                    </h2>
+                    <p class="subscription__description">
+                        Stay updated with the latest properties, exclusive deals, and real estate insights.
+                    </p>
+                </div>
+
+                <div class="subscription__form">
+                    <form action="index.html" class="subscription__form-content" onsubmit="return handleSubmit(event)">
+                        <div class="subscription__form-group">
+                            <label for="name" class="subscription__label">Full Name</label>
+                            <input type="text" id="name" class="subscription__input" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="subscription__form-group">
+                            <label for="email" class="subscription__label">Email Address</label>
+                            <input type="email" id="email" class="subscription__input" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="subscription__form-group">
+                            <label for="phone" class="subscription__label">Phone Number</label>
+                            <input type="tel" id="phone" class="subscription__input" placeholder="Enter your phone number">
+                        </div>
+                        <div class="subscription__form-group">
+                            <label for="preferences" class="subscription__label">Property Preferences</label>
+                            <select id="preferences" class="subscription__input">
+                                <option value="">Select your preferences</option>
+                                <option value="residential">Residential Properties</option>
+                                <option value="commercial">Commercial Properties</option>
+                                <option value="land">Land Plots</option>
+                                <option value="all">All Types</option>
+                            </select>
+                        </div>
+                        <div class="subscription__form-group">
+                            <label for="budget" class="subscription__label">Budget Range</label>
+                            <select id="budget" class="subscription__input">
+                                <option value="">Select your budget range</option>
+                                <option value="1-5">Rs 1-5 Lakhs</option>
+                                <option value="5-10">Rs 5-10 Lakhs</option>
+                                <option value="10-20">Rs 10-20 Lakhs</option>
+                                <option value="20-50">Rs 20-50 Lakhs</option>
+                                <option value="50+">Rs 50+ Lakhs</option>
+                            </select>
+                        </div>
+                        <div class="subscription__form-group">
+                            <label class="subscription__label">Preferred Location</label>
+                            <div class="subscription__checkbox-group">
+                                <label class="subscription__checkbox">
+                                    <input type="checkbox" name="location" value="bangalore"> Bangalore
+                                </label>
+                                <label class="subscription__checkbox">
+                                    <input type="checkbox" name="location" value="hyderabad"> Hyderabad
+                                </label>
+                                <label class="subscription__checkbox">
+                                    <input type="checkbox" name="location" value="chennai"> Chennai
+                                </label>
+                                <label class="subscription__checkbox">
+                                    <input type="checkbox" name="location" value="mumbai"> Mumbai
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="button subscription__button">
+                            Subscribe Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-chevrons-up'></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./assets/js/main.js"></script>
+    
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            // You can add form validation or data processing here if needed
+            window.location.href = 'index.html';
+            return false;
+        }
+    </script>
+</body>
+</html>
+
